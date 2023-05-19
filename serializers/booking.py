@@ -7,6 +7,7 @@ class AuthBody(BaseModel):
     username: str = Field(...)
     password: str = Field(...)
 
+        
 class AuthResponse(BaseModel):
     token: str = Field(...)
 
@@ -36,4 +37,3 @@ class BookingReduced(BaseModel):
 
 class BookingIdsResponse(BaseModel):
     bookingid: int = Field(...)
-
